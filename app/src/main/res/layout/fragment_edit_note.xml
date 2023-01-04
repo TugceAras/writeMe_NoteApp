@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    >
+
+    <EditText
+        android:id="@+id/editTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="@color/tab_bar"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/title"
+        android:singleLine="true"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editSubtitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/tab_bar"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/subtitle"
+        android:singleLine="true"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color"
+        app:layout_constraintEnd_toEndOf="@+id/editTitleText"
+        app:layout_constraintStart_toStartOf="@+id/editTitleText"
+        app:layout_constraintTop_toBottomOf="@+id/editTitleText" />
+
+    <EditText
+        android:id="@+id/editNoteText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="6"
+        android:background="@color/tab_bar"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:hint="@string/note"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color"
+        app:layout_constraintBottom_toTopOf="@+id/editNoteButton"
+        app:layout_constraintEnd_toEndOf="@+id/editTitleText"
+        app:layout_constraintStart_toStartOf="@+id/editTitleText"
+        app:layout_constraintTop_toBottomOf="@+id/editSubtitleText" />
+
+    <Button
+        android:id="@+id/editNoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="@font/nexabold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/edit_note"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
