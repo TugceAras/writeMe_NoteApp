@@ -25,4 +25,4 @@
 
 <!-- Link -->
 ## 🔗 Play Store Link
-#### Link will be provided after the problem with Google Play is resolved
+#### - Link will be provided after the problem with Google Play is resolved
